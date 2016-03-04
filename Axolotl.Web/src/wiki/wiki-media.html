@@ -1,0 +1,8 @@
+<template bindable="media">
+    <div class="text-center">
+        <img src.bind="media.path" if.bind="media.path" style="max-width: 100%; min-width: 100%;" />
+        <p>
+            Image source: <em innerhtml.bind="media.path"></em>
+        </p>
+    </div>
+</template>

@@ -1,0 +1,28 @@
+﻿<template>
+    <require from="./wiki-previous.html"></require>
+    <require from="./wiki-next.html"></require>
+    <require from="./wiki-media.html"></require>
+    <require from="./wiki-content.html"></require>
+    <require from="./wiki-header.html"></require>
+    <div class="jumbotron">
+        <div class="container text-center">
+            <wiki-header entry.bind="entry"/>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-md-3 text-left">
+            <wiki-previous previous.bind="previous"></wiki-previous>
+        </div>
+        <div class="col-md-6">
+            <div class="col-md-12">
+                <wiki-content content.bind="content"/>
+            </div>
+            <div class="col-md-12">
+                <wiki-media media.bind="content.media"/>
+            </div>
+        </div>
+        <div class="col-md-3 text-right">
+            <wiki-next next.bind="next"></wiki-next>
+        </div>
+    </div>
+</template>

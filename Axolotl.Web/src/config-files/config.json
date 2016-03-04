@@ -1,0 +1,12 @@
+﻿{
+  "development": {
+    "api": {
+      "server": "//localhost:56328"
+    }
+  },
+  "production": {
+    "api": {
+      "server": "//axolotl-wiki.azurewebsites.net"
+    }
+  }
+}

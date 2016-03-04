@@ -1,0 +1,6 @@
+<template bindable="content">
+    <h1 innerhtml.bind="content.subHeading | sanitizeHTML" class="text-center"></h1>
+    <hr />
+    <p innerhtml.bind="content.text | sanitizeHTML" class="lead text-justify">
+    </p>
+</template>
