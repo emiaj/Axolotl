@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Reflection;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using Autofac;
 using Autofac.Integration.WebApi;
+using Newtonsoft.Json.Serialization;
 
 namespace Axolotl
 {
@@ -21,7 +24,17 @@ namespace Axolotl
             config.DependencyResolver = new AutofacWebApiDependencyResolver(container);
 
             // CORS
-            config.EnableCors();
+            if (ConfigurationManager.AppSettings["CORS.Enabled"] == "1")
+            {
+                var cors = new EnableCorsAttribute(ConfigurationManager.AppSettings["CORS.Origins"], "*", "*");
+                config.EnableCors(cors);
+            }
+
+            // Formatters
+            config
+                .Formatters.JsonFormatter.SerializerSettings
+                .ContractResolver = new CamelCasePropertyNamesContractResolver();
+
 
             // Web API routes
             config.MapHttpAttributeRoutes();
