@@ -9,7 +9,7 @@
     </metadata>
   <files>
     <file src="bin/*.dll" target="bin" />
-    <file src="bin/roslyn/*.*" target="bin/roslyn" />
+    <file src="bin/roslyn" target="bin/roslyn" />
     <file src="Web.config" target="" />
     <file src="Web.*.config" target="" />
     <file src="Global.asax" target="" />
