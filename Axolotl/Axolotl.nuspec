@@ -5,6 +5,7 @@
         <version>1.0.0</version>
         <authors>jaime</authors>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Axolotl API.</description>
     </metadata>
   <files>
     <file src="bin\*.dll" target="bin" />
