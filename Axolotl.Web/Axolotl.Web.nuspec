@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>Axolotl.Web</id>
+        <version>1.0.0</version>
+        <authors>jaime</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Axolotl Web.</description>
+    </metadata>
+  <files>
+    <file src="favicon.ico" target=""/>
+    <file src="config.js" target=""/>
+    <file src="index.html" target=""/>
+    <file src="index.js" target=""/>
+    <file src="Web.config" target="" />
+    <file src="dist\" target="dist" />
+    <file src="styles\" target="styles" />
+    <file src="jspm_packages\" target="jspm_packages" />
+  </files>
+</package>
