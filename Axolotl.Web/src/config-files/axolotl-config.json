@@ -6,7 +6,7 @@
   },
   "production": {
     "api": {
-      "server": "//axolotl-wiki.azurewebsites.net"
+      "server": "//axolotl-wiki-api.azurewebsites.net"
     }
   }
 }

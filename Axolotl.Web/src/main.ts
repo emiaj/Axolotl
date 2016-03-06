@@ -8,9 +8,10 @@ export function configure(aurelia: Aurelia) {
       .plugin('aurelia-configuration',config => {
           config.setEnvironments({
               development: ['localhost'],
-              production: ['axolotl-wiki.azurewebsites.net']
+              production: ['axolotl-wiki-web.azurewebsites.net']
           });
           config.setDirectory('config-files');
+          config.setConfig('axolotl-config.json');
       });
 
   //Uncomment the line below to enable animation.
