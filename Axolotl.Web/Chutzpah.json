@@ -1,0 +1,20 @@
+{
+  "References": [
+    {
+      "Includes": [
+        "node_modules/typescript/lib/typescript.js",
+        "node_modules/systemjs/dist/system.js",
+        "node_modules/systemjs/dist/system-polyfills.js",
+        "node_modules/es6-module-loader/dist/es6-module-loader.js",
+        "**/src/**.ts"
+      ],
+      "Excludes": [ "**/src/**.d.ts" ]
+    }
+  ],
+  "Tests": [
+    {
+      "Includes": [ "**/test/unit/**.ts" ],
+      "Excludes": [ "**/test/**.d.ts" ]
+    }
+  ]
+}
